@@ -33,11 +33,6 @@ export default function App() {
             component={GoalScreen}
             options={{ title: "Joe's Goal", headerShown: true }}
             />
-          <Stack.Screen
-            name="KetoFactsMain"
-            component={KetoFactsMainScreen}
-            options={{ title: 'Keto Facts From API', headerShown: true }}
-            />
         </Stack.Group>
         <Stack.Group>
           <Stack.Screen
@@ -90,6 +85,11 @@ export default function App() {
             component={JoeAlignmentMainScreen}
             options={{title: "Alignment: Virta and Joe", headerShown: true}}
           />
+          <Stack.Screen
+            name="KetoFactsMain"
+            component={KetoFactsMainScreen}
+            options={{ title: 'Keto Facts From API', headerShown: true }}
+            />
         </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>

@@ -4,6 +4,7 @@ import { Text, View, Image, TextInput, TouchableOpacity, Linking } from 'react-n
 import { virtaAppStyles } from './VirtaAppStyle';
 import Collapsible from 'react-native-collapsible';
 import { AppConstants } from './AppConstants';
+import {visitURL} from './URLVisitor';
 
 const {useState} = React;
 
@@ -19,6 +20,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
   const [isYCWCollapsed,setYCWCollapsed] = useState(true);
   const [isHighlandCollapsed,setHighlandCollapsed] = useState(true);
   const [isThisAppCollapsed,setThisAppCollapsed] = useState(true);
+  const [isPersonalLifeCollapsed,setPersonalLifeCollapsed] = useState(true);
 
   function toggleCorporateCareer() {
       setCorporateCareerCollapsed(!isCorporateCareerCollapsed);
@@ -60,6 +62,14 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
     setThisAppCollapsed(!isThisAppCollapsed);
   }
 
+  function togglePersonalLife() {
+    setPersonalLifeCollapsed(!isPersonalLifeCollapsed);
+  }
+
+  function onPressKetoFacts() {
+    navigation.navigate('KetoFactsMain');
+  }
+
   function expandAll() {
     setCorporateCareerCollapsed(false);
     setSideProjectsCollapsed(false);
@@ -71,6 +81,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
     setYCWCollapsed(false);
     setHighlandCollapsed(false);
     setThisAppCollapsed(false);
+    setPersonalLifeCollapsed(false);
   }
 
   function collapseAll() {
@@ -84,30 +95,23 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
     setYCWCollapsed(true);
     setHighlandCollapsed(true);
     setThisAppCollapsed(true);
+    setPersonalLifeCollapsed(true);
   }
 
   function onPressDR() {
-    Linking.openURL('http://diseasereversals.com').catch((err) =>
-      console.error("An error occurred trying to open DiseaseReversals.com.", err));
-      alert.error("An error occurred trying to open DiseaseReverals.com");
+    visitURL('http://diseasereversals.com');
   }
 
   function onPressHighland() {
-    Linking.openURL('https://highland.k12.oh.us').catch((err) =>
-      console.error("An error occurred trying to open Highland High School website.", err));
-      alert.error("An error occurred trying to open Highland High School website");
+    visitURL('https://highland.k12.oh.us');
   }
 
   function onPressYCW() {
-    Linking.openURL('https://youcuredwhat.com').catch((err) =>
-      console.error("An error occurred trying to open YouCuredWhat.com.", err));
-      alert.error("An error occurred trying to open YouCuredWhat.com");
+    visitURL('https://youcuredwhat.com');
   }
 
   function onPressHookShotsTwitter() {
-    Linking.openURL('https://twitter.com/HookShotsApp').catch((err) =>
-      console.error("An error occurred trying to open twitter.com/HookShotsApp.", err));
-      alert.error("An error occurred trying to open twitter.com/HookShotsApp");
+    visitURL('https://twitter.com/HookShotsApp');
   }
 
   return (
@@ -135,7 +139,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
             <Collapsible collapsed={isMotoristsCollapsed}>
               <Text style={virtaAppStyles.collapsibleGrandchildText}>First few years: Worked on homegrown systems, back-end systems, Siebel</Text>
               <Text style={virtaAppStyles.collapsibleGrandchildText}>Last few years: integration developer (Mulesoft ESB and Guidewire)</Text>
-              <Text style={virtaAppStyles.collapsibleGrandchildText}>Became senior integration developer and led small team focused on Document Management during large Systems Transformation project</Text>
+              <Text style={virtaAppStyles.collapsibleGrandchildText}>Became senior integration developer and <strong>leader</strong> of small team focused on Document Management during large Systems Transformation project</Text>
             </Collapsible>
             <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleGrange}>{isGrangeCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Architect: Grange Insurance (2019-current)
               <Image source={require('./assets/grange.png')}
@@ -143,19 +147,19 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
               />
             </Text>
             <Collapsible collapsed={isGrangeCollapsed}>
-              <Text style={virtaAppStyles.collapsibleGrandchildText}>Senior Solution Architect for Middleware team (Mulesoft ESB)</Text>
+              <Text style={virtaAppStyles.collapsibleGrandchildText}><strong>Senior Solution Architect</strong> for Middleware team (Mulesoft ESB)</Text>
               <Text style={virtaAppStyles.collapsibleGrandchildText}>Designed over 100 APIs for core systems transformation</Text>
-              <Text style={virtaAppStyles.collapsibleGrandchildText}>Friendly communication, high-quality analysis and designs, solid ideas and proofs of concept</Text>
+              <Text style={virtaAppStyles.collapsibleGrandchildText}>Friendly communication, high-quality analysis and designs, solid ideas and <strong>proofs of concept</strong></Text>
             </Collapsible>
           </Collapsible>
-          <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleSideProjects}>{isSideProjectsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Side Projects</Text>
+          <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleSideProjects}>{isSideProjectsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Projects Outside Work</Text>
             <Collapsible collapsed={isSideProjectsCollapsed}>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHookShots}>{isHookShotsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <em>Hook Shots App</em>: iPhone & Android App</Text>
               <Collapsible collapsed={isHookShotsCollapsed}>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Released in July 2015 to App Store and Google Play Store</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Fun, silly basketball app. Create a player, challenge friends to 1-minute contests</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>App tracked records, Points Per Challenge, etc.</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Built for both iOS and Android using Corona SDK</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Built for both <strong>iOS and Android</strong> using Corona SDK (now known as Solar2D)</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Backend coded using PHP and MySQL</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>No longer in App Store but <Text style={virtaAppStyles.bulletedLink} onPress={onPressHookShotsTwitter}>old Twitter account</Text> still exists</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Loading screens had some killer puns</Text>
@@ -163,31 +167,40 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleDR}>{isDRCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <em>Disease Reversals</em> Website</Text>
               <Collapsible collapsed={isDRCollapsed}>
                 <Text style={[virtaAppStyles.collapsibleGrandchildText,virtaAppStyles.bulletedLink]} onPress={onPressDR}>DiseaseReversals.com</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Site combines my passions of health/nutrition and software dev</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Stores anecdotes of real-world disease reversals, categorized by diet used</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Front-end: JavaScript, HTML, CSS. Back-end: MySQL, PHP</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Site combines my passions of <strong>health/nutrition</strong> and <strong>software dev</strong></Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Stores anecdotes of real-world <strong>disease reversals</strong>, categorized by <strong>diet</strong> used</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}><strong>Front-end</strong>: JavaScript, HTML, CSS. <strong>Back-end</strong>: MySQL, PHP</Text>
               </Collapsible>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleYCW}>{isYCWCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <em>You Cured What?!</em> Podcast Website</Text>
               <Collapsible collapsed={isYCWCollapsed}>
                 <Text style={[virtaAppStyles.collapsibleGrandchildText,virtaAppStyles.bulletedLink]} onPress={onPressYCW}>YouCuredWhat.com</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Website for my "You Cured What?!" podcast about real people reversing "irreversible" conditions</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Website for my "You Cured What?!" podcast about real people <strong>reversing "irreversible" conditions</strong></Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Built using combination of WordPress, Divi, custom CSS, JavaScript, PHP</Text>
               </Collapsible>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHighland}>{isHighlandCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Highland High School Website</Text>
               <Collapsible collapsed={isHighlandCollapsed}>
                 <Text style={[virtaAppStyles.collapsibleGrandchildText,virtaAppStyles.bulletedLink]} onPress={onPressHighland}>highland.k12.oh.us</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>My first paid Web gig</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Built using combination of WordPress, Divi, custom CSS, JavaScript, PHP, MySQL</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Built using combination of WordPress, Divi, <strong>custom CSS</strong>, JavaScript, PHP, MySQL</Text>
               </Collapsible>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleThisApp}>{isThisAppCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} This App</Text>
               <Collapsible collapsed={isThisAppCollapsed}>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>This app has been a fun side project!</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>It has helped me learn React</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Shows that I am a strong developer, a go-getter, and very aligned with Virta's mission</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Demonstrates that I am a strong developer, a <strong>go-getter</strong>, and very <strong>aligned with Virta's mission</strong></Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>While we're at it, check out this app's integration with a basic back-end <Text style={virtaAppStyles.bulletedLink} onPress={onPressKetoFacts}>Keto Facts API</Text></Text>
               </Collapsible>
           </Collapsible>
-          <Text onPress={expandAll}>Expand All</Text>
-          <Text onPress={collapseAll}>Collapse All</Text>
+          <Text style={virtaAppStyles.collapsibleParentText} onPress={togglePersonalLife}>{isPersonalLifeCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Personal Life</Text>
+          <Collapsible collapsed={isPersonalLifeCollapsed}>
+            <Text style={virtaAppStyles.collapsibleGrandchildText}>Husband to a <strong>lovely</strong> wife.</Text>
+            <Text style={virtaAppStyles.collapsibleGrandchildText}>Father to <strong>wonderful</strong> 16-month-old daughter.</Text>
+            <Text style={virtaAppStyles.collapsibleGrandchildText}>Lifelong learner.</Text>
+            <Text style={virtaAppStyles.collapsibleGrandchildText}>Trying to align my vocation with my conscience, my passions, and a yearning to help others.</Text>
+            <Text style={virtaAppStyles.collapsibleGrandchildText}>Striving to live <strong>authentically</strong>.</Text>
+          </Collapsible>
+          <Text style={virtaAppStyles.expandCollapseText} onPress={expandAll}>Expand All</Text>
+          <Text style={virtaAppStyles.expandCollapseText} onPress={collapseAll}>Collapse All</Text>
         </View>
       </View>
   );

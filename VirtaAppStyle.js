@@ -18,6 +18,11 @@ const virtaAppStyles = StyleSheet.create({
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
     fontWeight: 'bold'
   },
+  subheaderText: {
+    fontSize: '16px',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontWeight: 'bold',
+  },
   unboldedHeaderText: {
     fontSize: '24px',
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
@@ -46,6 +51,35 @@ const virtaAppStyles = StyleSheet.create({
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
     textTransform: 'uppercase',
     color: 'white',
+  },
+  standardSmallerButtonText: {
+    fontSize:'16px',
+    fontWeight: 'bold',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    textTransform: 'uppercase',
+    color: 'white',
+  },
+  smallButton: {
+    backgroundColor: AppConstants.virtaDarkBlue,
+    maxWidth: 200,
+    minWidth: 100,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 12,
+    paddingRight: 12,
+    borderRadius: 25,
+    borderWidth: 2,
+    borderColor: AppConstants.virtaBlue,
+    alignItems: 'center',
+  },
+  smallButtonText: {
+    fontSize:'10px',
+    fontWeight: 'bold',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    textTransform: 'uppercase',
+    color: 'white',
+    textDecorationLine: 'none',
+    textDecorationThickness: 50,
   },
   usualCareButton: {
     maxWidth: 300,
@@ -78,6 +112,12 @@ const virtaAppStyles = StyleSheet.create({
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
     paddingBottom: 15,
   },
+  subBulletText: {
+    fontSize: '20px',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    paddingBottom: 15,
+    paddingLeft: 30,
+  },
   collapsibleParentText: {
     fontSize: '30px',
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
@@ -93,7 +133,7 @@ const virtaAppStyles = StyleSheet.create({
     fontSize: '20px',
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
     paddingBottom: 10,
-    paddingLeft: 30,
+    paddingLeft: 40,
   },
   belowImageText: {
     fontSize: '30px',
@@ -103,11 +143,30 @@ const virtaAppStyles = StyleSheet.create({
     fontSize: '20px',
     fontWeight: 'bold'
   },
-  factText: {
+  factView: {
+    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    paddingTop: 20,
+  },
+  factNumberText: {
     paddingBottom: 10,
     fontWeight: 'bold',
     fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
     color: AppConstants.virtaDarkBlue
+  },
+  trueFactText: {
+    paddingBottom: 10,
+    fontWeight: 'bold',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    color: AppConstants.virtaDarkBlue
+  },
+  falseFactText: {
+    paddingBottom: 10,
+    fontWeight: 'bold',
+    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    textDecorationLine: 'line-through',
+    color: 'red',
   },
   barChartLabel: {
     color: 'black'
@@ -115,6 +174,12 @@ const virtaAppStyles = StyleSheet.create({
   bulletedLink: {
     textDecorationLine: 'underline',
     fontWeight: 'bold',
+    color: AppConstants.virtaDarkBlue,
+  },
+  expandCollapseText: {
+    paddingTop: 10,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
     color: AppConstants.virtaDarkBlue,
   }
 });

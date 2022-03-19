@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, Image, TextInput, TouchableOpacity, Linking } from 'react-native';
 import { virtaAppStyles } from './VirtaAppStyle';
+import { visitURL } from './URLVisitor';
 
 const {useState} = React;
 
@@ -19,6 +20,10 @@ const AboutJoeMainScreen = ({ navigation }) => {
     navigation.navigate("JoeAlignment");
   }
 
+  function onPressVideoIntro() {
+    visitURL("TODO");
+  }
+
   return (
       <View style={virtaAppStyles.container}>
           <View style={{flex: 1}}>
@@ -27,7 +32,14 @@ const AboutJoeMainScreen = ({ navigation }) => {
                 source={require('./assets/joekalb.jpg')}
                 style={{width: 150, height: 150}}
               />
-              <Text style={[virtaAppStyles.headerText, {marginLeft: 100, fontSize: 50}]}>Joe Kalb</Text>
+              <View>
+                <Text style={[virtaAppStyles.headerText, {marginLeft: 100, fontSize: 50}]}>Joe Kalb</Text>
+                <TouchableOpacity onPress={onPressVideoIntro} style={{ marginLeft: 100, marginTop: 15, marginBottom: 15, alignItems: 'center'}}>
+                  <View style={virtaAppStyles.standardButton}>
+                    <Text style={virtaAppStyles.standardButtonText}>See Video Intro</Text>
+                  </View>
+                </TouchableOpacity>
+              </View>
             </View>
             <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}<strong>Doer</strong>. Strong developer, communicator, and co-worker</Text>
             <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Confident but humble attitude, <strong>growth mindset</strong></Text>

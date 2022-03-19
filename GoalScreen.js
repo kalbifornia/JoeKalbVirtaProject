@@ -19,6 +19,10 @@ const GoalScreen = ({ navigation }) => {
     navigation.navigate('AboutJoeMain');
   }
 
+  function onPressDemoAPI() {
+    navigation.navigate('KetoFactsMain');
+  }
+
   return (
     <View style={virtaAppStyles.container}>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end'}}>
@@ -33,6 +37,11 @@ const GoalScreen = ({ navigation }) => {
         <TouchableOpacity onPress={onPressAboutJoe} style={{paddingTop: 20}}>
           <View style={virtaAppStyles.standardButton}>
             <Text style={virtaAppStyles.standardButtonText}>About Joe</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={onPressDemoAPI} style={{paddingTop: 20}}>
+          <View style={virtaAppStyles.standardButton}>
+            <Text style={virtaAppStyles.standardSmallerButtonText}>Demo API integration</Text>
           </View>
         </TouchableOpacity>
       </View>

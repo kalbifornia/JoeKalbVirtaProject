@@ -7,46 +7,18 @@ const {useState} = React;
 
 const JoeAttitudeMainScreen = ({ navigation }) => {
 
-  function onPressCompetence() {
-
-  }
-
-  function onPressAttitude() {
-
-  }
-
-  function onPressAlignment() {
-
-  }
-
   return (
       <View style={virtaAppStyles.container}>
           <View style={{flex: 1}}>
-            <View style={{flexDirection: 'row'}}>
-              <Image
-                source={require('./assets/joekalb.jpg')}
-                style={{width: 150, height: 150}}
-              />
-              <Text style={[virtaAppStyles.headerText, {marginLeft: 100, fontSize: 50}]}>Joe Kalb</Text>
-            </View>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}<strong>Doer</strong>. Strong developer, communicator, and co-worker</Text>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Confident but humble attitude, <strong>growth mindset</strong></Text>
-            <Text style={[virtaAppStyles.bulletedMainListText, {marginBottom: 15}]}>{'\u2022'}<strong>Highly aligned</strong> with Virta's mission</Text>
-            <TouchableOpacity onPress={onPressCompetence} style={{marginTop: 15, marginBottom: 15, alignItems: 'center'}}>
-              <View style={virtaAppStyles.standardButton}>
-                <Text style={virtaAppStyles.standardButtonText}>Competence</Text>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={onPressAttitude} style={{marginTop: 15, marginBottom: 15, alignItems: 'center'}}>
-              <View style={virtaAppStyles.standardButton}>
-                <Text style={virtaAppStyles.standardButtonText}>Attitude</Text>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={onPressAlignment} style={{marginTop: 15, marginBottom: 15, alignItems: 'center'}}>
-              <View style={virtaAppStyles.standardButton}>
-                <Text style={virtaAppStyles.standardButtonText}>Alignment</Text>
-              </View>
-            </TouchableOpacity>
+            <Text style={[virtaAppStyles.headerText, {fontSize: 50}]}>Attitude</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Confident but humble. Positive.</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Friendly, communicative, problem-solving.</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Solutions-oriented. Motivated to address root cause.</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Growth mindset. I love to learn.</Text>
+            <Text style={virtaAppStyles.subBulletText}>-Led me to: create a smartphone app, do open mic stand-up comedy, become Toastmasters Competent Communicator, start an inspirational podcast about people healing diseases, start a website about people reversing diseases.</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}"Whether you think you can, or think you can't, you're right"</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Men and women are much more powerful and capable than we are commonly led to believe.</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}I am determined to earn a living by helping people. And Virta helps people.</Text>
           </View>
       </View>
   );

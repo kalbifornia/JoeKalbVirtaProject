@@ -68,10 +68,10 @@ const KetoFactsMainScreen = ({ navigation }) => {
           let count = 1;
           for (let fact of responseJson) {
             if (fact.factIsTrue) {
-              facts.push(<View style={{flexDirection: 'row'}}><Text style={virtaAppStyles.factNumberText}>{count + ". "}</Text><Text style={virtaAppStyles.trueFactText}>{fact.factText} </Text><TouchableOpacity onPress={() => onPressFactFalse(fact.factID)}><View style={virtaAppStyles.smallButton}><Text style={virtaAppStyles.smallButtonText}>Set = False</Text></View></TouchableOpacity></View>);
+              facts.push(<View key={fact.factID} style={{flexDirection: 'row'}}><Text style={virtaAppStyles.factNumberText}>{count + ". "}</Text><Text style={virtaAppStyles.trueFactText}>{fact.factText} </Text><TouchableOpacity onPress={() => onPressFactFalse(fact.factID)}><View style={virtaAppStyles.smallButton}><Text style={virtaAppStyles.smallButtonText}>Set = False</Text></View></TouchableOpacity></View>);
               count++;
             } else {
-              facts.push(<View style={{flexDirection: 'row'}}><Text style={virtaAppStyles.factNumberText}>{count + ". "}</Text><Text style={virtaAppStyles.falseFactText}>{fact.factText} </Text><TouchableOpacity onPress={() => onPressFactTrue(fact.factID)}><View style={virtaAppStyles.smallButton}><Text style={virtaAppStyles.smallButtonText}>Set = True</Text></View></TouchableOpacity></View>);
+              facts.push(<View key={fact.factID} style={{flexDirection: 'row'}}><Text style={virtaAppStyles.factNumberText}>{count + ". "}</Text><Text style={virtaAppStyles.falseFactText}>{fact.factText} </Text><TouchableOpacity onPress={() => onPressFactTrue(fact.factID)}><View style={virtaAppStyles.smallButton}><Text style={virtaAppStyles.smallButtonText}>Set = True</Text></View></TouchableOpacity></View>);
               count++;
             }
           }

@@ -26,11 +26,13 @@ const VirtaCareMainScreen = ({ navigation }) => {
             <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Implicitly: "You can do this. We will help."</Text>
             <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Turn Your Diabetes into setebaiD!</Text>
             <TouchableOpacity onPress={onPressHallbergVideo}>
-              <Image source={require('./assets/hallberg.png')}
-                style={{visibility: imageVisible? 'visible' : 'hidden', width: 355, height: 200, textAlign: 'center'}}
-              />
+            {
+              imageVisible ? <Image source={require('./assets/hallberg.png')}
+                style={{width: 355, height: 200,}}
+              /> : null
+            }
             </TouchableOpacity>
-            <Text style={[{visibility: imageVisible ? 'visible' : 'hidden'}, virtaAppStyles.belowImageText]}>Don't believe me? {'\u261d'}See it from Virta's Medical Director!</Text>
+            {imageVisible ? <Text style={virtaAppStyles.belowImageText}>Don't believe me? {'\u261d'}See it from Virta's Medical Director!</Text> : null}
           </View>
       </View>
   );

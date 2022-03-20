@@ -29,7 +29,7 @@ const DetailedCompareMainScreen = ({ navigation }) => {
           <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
             <TouchableOpacity onPress={onPressHeart}>
               <View style={virtaAppStyles.standardButton}>
-                <Text style={virtaAppStyles.standardButtonText}><span style={{color: 'red'}}>{String.fromCodePoint('0x1F4D6')}</span> Overview</Text>
+                <Text style={virtaAppStyles.standardButtonText}><Text style={{color: 'red'}}>{String.fromCodePoint('0x1F4D6')}</Text> Overview</Text>
               </View>
             </TouchableOpacity>
           </View>

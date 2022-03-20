@@ -41,9 +41,9 @@ const AboutJoeMainScreen = ({ navigation }) => {
                 </TouchableOpacity>
               </View>
             </View>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}<strong>Doer</strong>. Strong developer, communicator, and co-worker</Text>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Confident but humble attitude, <strong>growth mindset</strong></Text>
-            <Text style={[virtaAppStyles.bulletedMainListText, {marginBottom: 15}]}>{'\u2022'}<strong>Highly aligned</strong> with Virta's mission</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}<Text style={{fontWeight: 'bold'}}>Doer</Text>. Strong developer, communicator, and co-worker</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Confident but humble attitude, <Text style={{fontWeight: 'bold'}}>growth mindset</Text></Text>
+            <Text style={[virtaAppStyles.bulletedMainListText, {marginBottom: 15}]}>{'\u2022'}<Text style={{fontWeight: 'bold'}}>Highly aligned</Text> with Virta's mission</Text>
             <TouchableOpacity onPress={onPressCompetence} style={{marginTop: 15, marginBottom: 15, alignItems: 'center'}}>
               <View style={virtaAppStyles.standardButton}>
                 <Text style={virtaAppStyles.standardButtonText}>Competence</Text>

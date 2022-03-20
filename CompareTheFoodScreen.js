@@ -14,26 +14,26 @@ const CompareTheFoodScreen = ({ navigation }) => {
   }
 
   const ketoImages = [
-    require('./assets/ketoFoods/1.jfif'),
-    require('./assets/ketoFoods/2.jfif'),
-    require('./assets/ketoFoods/3.jfif'),
-    require('./assets/ketoFoods/4.jfif'),
-    require('./assets/ketoFoods/5.jfif'),
-    require('./assets/ketoFoods/6.jfif'),
-    require('./assets/ketoFoods/7.jfif'),
+    require('./assets/ketoFoods/1.jpeg'),
+    require('./assets/ketoFoods/2.jpeg'),
+    require('./assets/ketoFoods/3.jpeg'),
+    require('./assets/ketoFoods/4.jpeg'),
+    require('./assets/ketoFoods/5.jpeg'),
+    //require('./assets/ketoFoods/6.jpeg'),
+    require('./assets/ketoFoods/7.jpeg'),
   ];
 
   const usualCareImages = [
-    require('./assets/usualCareFoods/1.jfif'),
-    require('./assets/usualCareFoods/2.jfif'),
-    require('./assets/usualCareFoods/3.jfif'),
-    require('./assets/usualCareFoods/4.jfif'),
-    require('./assets/usualCareFoods/5.jfif'),
-    require('./assets/usualCareFoods/6.jfif'),
-    require('./assets/usualCareFoods/7.jfif'),
-    require('./assets/usualCareFoods/8.jfif'),
-    require('./assets/usualCareFoods/9.jfif'),
-    require('./assets/usualCareFoods/10.jfif'),
+    require('./assets/usualCareFoods/1.jpeg'),
+    require('./assets/usualCareFoods/2.jpeg'),
+    require('./assets/usualCareFoods/3.jpeg'),
+    require('./assets/usualCareFoods/4.jpeg'),
+    require('./assets/usualCareFoods/5.jpeg'),
+    require('./assets/usualCareFoods/6.jpeg'),
+    require('./assets/usualCareFoods/7.jpeg'),
+    require('./assets/usualCareFoods/8.jpeg'),
+    require('./assets/usualCareFoods/9.jpeg'),
+    require('./assets/usualCareFoods/10.jpeg'),
   ];
 
   const {width} = Dimensions.get("window");

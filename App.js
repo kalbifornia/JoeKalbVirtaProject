@@ -15,6 +15,8 @@ import AboutJoeMainScreen from './AboutJoeMainScreen';
 import JoeCompetenceMainScreen from './JoeCompetenceMainScreen';
 import JoeAttitudeMainScreen from './JoeAttitudeMainScreen';
 import JoeAlignmentMainScreen from './JoeAlignmentMainScreen';
+import AppLoading from 'expo-app-loading';
+import { useFonts } from 'expo-font';
 
 const Stack = createNativeStackNavigator();
 

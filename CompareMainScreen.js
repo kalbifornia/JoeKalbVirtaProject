@@ -33,8 +33,8 @@ const CompareMainScreen = ({ navigation }) => {
           <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
             <TouchableOpacity onPress={onPressVirta}>
               <View style={virtaAppStyles.standardButton}>
-                <Image source={require('./assets/virta-logo-white.svg')}
-                  style={{width: 120, height: 40, textAlign: 'center'}}
+                <Image source={require('./assets/virta-logo-white.png')}
+                  style={{width: 120, height: 40, }}
                 />
               </View>
             </TouchableOpacity>

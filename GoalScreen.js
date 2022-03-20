@@ -26,7 +26,7 @@ const GoalScreen = ({ navigation }) => {
   return (
     <View style={virtaAppStyles.container}>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end'}}>
-        <Text style={virtaAppStyles.unboldedHeaderText}>App <b>Goal:</b> to help me help Virta <b>reverse diabetes</b> in <b>100 million</b> people</Text>
+        <Text style={virtaAppStyles.unboldedHeaderText}>App <Text style={{fontWeight: 'bold'}}>Goal:</Text> to help me help Virta <Text style={{fontWeight: 'bold'}}>reverse diabetes</Text> in <Text style={{fontWeight: 'bold'}}>100 million</Text> people</Text>
       </View>
       <View style={{flex: 1, justifyContent: 'flex-start'}}>
         <TouchableOpacity onPress={onPressAboutVirta} style={{paddingTop: 20}}>

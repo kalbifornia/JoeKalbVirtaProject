@@ -6,12 +6,6 @@ import { AppConstants } from './AppConstants';
 
 const {useState} = React;
 
-const getFullName = (firstName, secondName, thirdName) => {
-  return firstName +  " "  + secondName + " " + thirdName;
-}
-
-
-
 const TitleScreen = ({ navigation }, props) => {
   const [footerVisible, setFooterVisible] = useState(false);
   const [buttonVisible, setButtonVisible] = useState(false);
@@ -30,18 +24,20 @@ const TitleScreen = ({ navigation }, props) => {
       <View style={{flex: 5, alignItems: 'center', justifyContent: 'flex-end'}}>
         <Text style={[virtaAppStyles.headerText,{paddingBottom:20}]}>Joe Kalb's P.O.C. React app for</Text>
         <Image source={require('./assets/virta-logo.png')}
-          style={{width: 177, height: 59, textAlign: 'center'}}
+          style={{width: 177, height: 59}}
         />
       </View>
       <View style={{flex: 5, alignItems: 'center', justifyContent: 'flex-start', paddingTop: 50}}>
-        <TouchableOpacity onPress={_onPress} style={{visibility: buttonVisible ? 'visible' : 'hidden'}}>
+        {buttonVisible? <TouchableOpacity onPress={_onPress}>
           <View style={virtaAppStyles.standardButton}>
             <Text style={virtaAppStyles.standardButtonText}>Begin</Text>
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> : null}
       </View>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 20}}>
-        <Text style={{fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif', fontSize: '18px', visibility: (footerVisible) ? 'visible' : 'hidden',}}>The "P.O.C." is <i>intended</i> to stand for "Proof of Concept" {String.fromCodePoint('0x1F61C')}</Text>
+      {
+        footerVisible ? <Text style={{fontFamily: 'Helvetica', fontSize: 18,}}>The "P.O.C." is <Text style={{fontStyle:'italic'}}>intended</Text> to stand for "Proof of Concept" {String.fromCodePoint('0x1F61C')}</Text> : null
+      }
       </View>
     </View>
   );

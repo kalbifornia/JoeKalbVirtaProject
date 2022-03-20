@@ -7,29 +7,29 @@ const virtaAppStyles = StyleSheet.create({
     backgroundColor: '#eee',
     alignItems: 'center',
     justifyContent: 'space-between',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     paddingTop: 25,
     paddingLeft: 25,
     paddingRight: 25,
-    paddingBotton: 25
+    paddingBottom: 25
   },
   headerText: {
-    fontSize: '24px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 24,
+    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   subheaderText: {
-    fontSize: '16px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 16,
+    fontFamily: 'Helvetica',
     fontWeight: 'bold',
   },
   unboldedHeaderText: {
-    fontSize: '24px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 24,
+    fontFamily: 'Helvetica',
   },
   mainText: {
-    fontSize: '12px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 12,
+    fontFamily: 'Helvetica',
     fontWeight: 'bold',
   },
   standardButton: {
@@ -46,16 +46,16 @@ const virtaAppStyles = StyleSheet.create({
     alignItems: 'center',
   },
   standardButtonText: {
-    fontSize:'24px',
+    fontSize: 24,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     textTransform: 'uppercase',
     color: 'white',
   },
   standardSmallerButtonText: {
-    fontSize:'16px',
+    fontSize:16,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     textTransform: 'uppercase',
     color: 'white',
   },
@@ -73,13 +73,12 @@ const virtaAppStyles = StyleSheet.create({
     alignItems: 'center',
   },
   smallButtonText: {
-    fontSize:'10px',
+    fontSize:10,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     textTransform: 'uppercase',
     color: 'white',
     textDecorationLine: 'none',
-    textDecorationThickness: 50,
   },
   usualCareButton: {
     maxWidth: 300,
@@ -95,52 +94,52 @@ const virtaAppStyles = StyleSheet.create({
     alignItems: 'center'
   },
   usualCareButtonText: {
-    fontSize: '24px',
+    fontSize: 24,
     fontFamily: '"Courier New", monospace',
     fontWeight: 'bold',
     color: 'white',
     textTransform: 'uppercase'
   },
   footerText: {
-    fontSize: '18px',
+    fontSize: 18,
   },
   bulletPointStyle: {
-    fontSize: '48px',
+    fontSize: 48,
   },
   bulletedMainListText: {
-    fontSize: '30px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 30,
+    fontFamily: 'Helvetica',
     paddingBottom: 15,
   },
   subBulletText: {
-    fontSize: '20px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 20,
+    fontFamily: 'Helvetica',
     paddingBottom: 15,
     paddingLeft: 30,
   },
   collapsibleParentText: {
-    fontSize: '30px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 30,
+    fontFamily: 'Helvetica',
     paddingBottom: 15,
   },
   collapsibleChildText: {
-    fontSize: '24px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 24,
+    fontFamily: 'Helvetica',
     paddingBottom: 12,
     paddingLeft: 15,
   },
   collapsibleGrandchildText: {
-    fontSize: '20px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 20,
+    fontFamily: 'Helvetica',
     paddingBottom: 10,
     paddingLeft: 40,
   },
   belowImageText: {
-    fontSize: '30px',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontSize: 30,
+    fontFamily: 'Helvetica',
   },
   detailedCompareButtonText: {
-    fontSize: '20px',
+    fontSize: 20,
     fontWeight: 'bold'
   },
   factView: {
@@ -152,19 +151,19 @@ const virtaAppStyles = StyleSheet.create({
   factNumberText: {
     paddingBottom: 10,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     color: AppConstants.virtaDarkBlue
   },
   trueFactText: {
     paddingBottom: 10,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     color: AppConstants.virtaDarkBlue
   },
   falseFactText: {
     paddingBottom: 10,
     fontWeight: 'bold',
-    fontFamily: '\'Montserrat\',Helvetica,Arial,Lucida,sans-serif',
+    fontFamily: 'Helvetica',
     textDecorationLine: 'line-through',
     color: 'red',
   },

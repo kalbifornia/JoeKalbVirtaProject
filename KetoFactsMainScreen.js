@@ -82,7 +82,7 @@ const KetoFactsMainScreen = ({ navigation }) => {
   }
 
   return (
-      <View style={virtaAppStyles.container}>
+      <View style={virtaAppStyles.container}> 
         <Text style={virtaAppStyles.headerText}>Keto Facts (coming from API)</Text>
         <Text style={virtaAppStyles.subheaderText}>See the <Text style={virtaAppStyles.bulletedLink} onPress={onPressSwagger}>Swagger documentation for this API</Text></Text>
           <View style={virtaAppStyles.factView}>

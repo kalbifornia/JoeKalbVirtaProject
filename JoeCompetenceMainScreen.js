@@ -169,7 +169,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 <Text style={[virtaAppStyles.collapsibleGrandchildText,virtaAppStyles.bulletedLink]} onPress={onPressDR}>DiseaseReversals.com</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Site combines my passions of <Text style={{fontWeight: 'bold'}}>health/nutrition</Text> and <Text style={{fontWeight: 'bold'}}>software dev</Text></Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>Stores anecdotes of real-world <Text style={{fontWeight: 'bold'}}>disease reversals</Text>, categorized by <Text style={{fontWeight: 'bold'}}>diet</Text> used</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}><Text style={{fontWeight: 'bold'}}>Front-end</Text>: JavaScript, HTML, CSS. <Text style={{fontWeight: 'bold'}}>Back-end</Text>: MySQL, PHP</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}><Text style={{fontWeight: 'bold'}}>Responsive Front-end</Text>: JavaScript, HTML, CSS. <Text style={{fontWeight: 'bold'}}>Back-end</Text>: MySQL, PHP</Text>
               </Collapsible>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleYCW}>{isYCWCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <Text style={{fontStyle:'italic'}}>You Cured What?!</Text> Podcast Website</Text>
               <Collapsible collapsed={isYCWCollapsed}>
@@ -181,7 +181,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
               <Collapsible collapsed={isHighlandCollapsed}>
                 <Text style={[virtaAppStyles.collapsibleGrandchildText,virtaAppStyles.bulletedLink]} onPress={onPressHighland}>highland.k12.oh.us</Text>
                 <Text style={virtaAppStyles.collapsibleGrandchildText}>My first paid Web gig</Text>
-                <Text style={virtaAppStyles.collapsibleGrandchildText}>Built using combination of WordPress, Divi, <Text style={{fontWeight: 'bold'}}>custom CSS</Text>, JavaScript, PHP, MySQL</Text>
+                <Text style={virtaAppStyles.collapsibleGrandchildText}>Responsive website. Built using combination of WordPress, Divi, <Text style={{fontWeight: 'bold'}}>custom CSS</Text>, JavaScript, PHP, MySQL</Text>
               </Collapsible>
               <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleThisApp}>{isThisAppCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} This App</Text>
               <Collapsible collapsed={isThisAppCollapsed}>

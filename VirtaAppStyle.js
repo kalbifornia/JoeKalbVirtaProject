@@ -95,7 +95,7 @@ const virtaAppStyles = StyleSheet.create({
   },
   usualCareButtonText: {
     fontSize: 24,
-    fontFamily: '"Courier New", monospace',
+    fontFamily: 'Courier New',
     fontWeight: 'bold',
     color: 'white',
     textTransform: 'uppercase'

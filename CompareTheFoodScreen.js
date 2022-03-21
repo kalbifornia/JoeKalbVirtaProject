@@ -19,7 +19,7 @@ const CompareTheFoodScreen = ({ navigation }) => {
     require('./assets/ketoFoods/3.jpeg'),
     require('./assets/ketoFoods/4.jpeg'),
     require('./assets/ketoFoods/5.jpeg'),
-    //require('./assets/ketoFoods/6.jpeg'),
+    require('./assets/ketoFoods/6.jpeg'),
     require('./assets/ketoFoods/7.jpeg'),
   ];
 

@@ -2,16 +2,11 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, Image, TextInput, TouchableOpacity, Linking } from 'react-native';
 import { virtaAppStyles } from './VirtaAppStyle';
+import { AppConstants } from './AppConstants';
 
 const {useState} = React;
 
 const VirtaCareMainScreen = ({ navigation }) => {
-  const [imageVisible, setImageVisible] = useState(false);
-
-  setTimeout(function() {
-    setImageVisible(true);
-    console.log("Just set image visible");
-  }, 2000);
 
   function onPressHallbergVideo() {
     Linking.openURL('https://youtu.be/JLbIxKgA4MY').catch((err) =>
@@ -22,17 +17,15 @@ const VirtaCareMainScreen = ({ navigation }) => {
       <View style={virtaAppStyles.container}>
           <View style={{flex: 1}}>
             <Text style={[virtaAppStyles.headerText,virtaAppStyles.bulletedMainListText]}>The Virta Health Way</Text>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}1-on-1 support with experienced, successful care staff</Text>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Implicitly: "You can do this. We will help."</Text>
-            <Text style={virtaAppStyles.bulletedMainListText}>{'\u2022'}Turn Your Diabetes into setebaiD!</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{AppConstants.bullet} 1-on-1 support with experienced, successful care staff</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{AppConstants.bullet} Implicitly: "You can do this. We will help."</Text>
+            <Text style={virtaAppStyles.bulletedMainListText}>{AppConstants.bullet} Turn Your Diabetes into setebaiD! <Text style={virtaAppStyles.bulletedJokeText}>Get it? Diabetes is reversed!</Text></Text>
             <TouchableOpacity onPress={onPressHallbergVideo}>
-            {
-              imageVisible ? <Image source={require('./assets/hallberg.png')}
+            <Image source={require('./assets/hallberg.png')}
                 style={{width: 355, height: 200,}}
-              /> : null
-            }
+            />
             </TouchableOpacity>
-            {imageVisible ? <Text style={virtaAppStyles.belowImageText}>Don't believe me? {'\u261d'}See it from Virta's Medical Director!</Text> : null}
+            <Text style={virtaAppStyles.belowImageText}>Don't believe me? {AppConstants.upFinger}See it from Virta's Medical Director!</Text>
           </View>
       </View>
   );

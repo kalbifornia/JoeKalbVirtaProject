@@ -65,7 +65,7 @@ export default function App() {
           <Stack.Screen
             name="CompareTheFood"
             component={CompareTheFoodScreen}
-            options={{title: "Food Comparison: Usual Care vs. Virta", headerShown: true}}
+            options={{title: "Swipeable Food Comparison", headerShown: true}}
           />
           <Stack.Screen
             name="AboutJoeMain"

@@ -80,6 +80,26 @@ const virtaAppStyles = StyleSheet.create({
     color: 'white',
     textDecorationLine: 'none',
   },
+  mediumButton: {
+    backgroundColor: AppConstants.virtaDarkBlue,
+    maxWidth: 225,
+    minWidth: 150,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingLeft: 19,
+    paddingRight: 19,
+    borderRadius: 19,
+    borderWidth: 2,
+    borderColor: AppConstants.virtaBlue,
+    alignItems: 'center',
+  },
+  mediumButtonText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    fontFamily: 'Helvetica',
+    textTransform: 'uppercase',
+    color: 'white',
+  },
   usualCareButton: {
     maxWidth: 300,
     minWidth: 200,
@@ -107,61 +127,69 @@ const virtaAppStyles = StyleSheet.create({
     fontSize: 48,
   },
   bulletedMainListText: {
-    fontSize: 30,
+    fontSize: 20,
     fontFamily: 'Helvetica',
     paddingBottom: 15,
   },
   subBulletText: {
-    fontSize: 20,
+    fontSize: 16,
     fontFamily: 'Helvetica',
     paddingBottom: 15,
     paddingLeft: 30,
   },
-  collapsibleParentText: {
-    fontSize: 30,
+  bulletedJokeText: {
+    fontSize: 12,
     fontFamily: 'Helvetica',
     paddingBottom: 15,
   },
-  collapsibleChildText: {
+  collapsibleParentText: {
     fontSize: 24,
+    fontFamily: 'Helvetica',
+    paddingBottom: 15,
+    paddingRight: 5,
+  },
+  collapsibleChildText: {
+    fontSize: 18,
     fontFamily: 'Helvetica',
     paddingBottom: 12,
     paddingLeft: 15,
+    paddingRight: 5,
   },
   collapsibleGrandchildText: {
-    fontSize: 20,
+    fontSize: 14,
     fontFamily: 'Helvetica',
     paddingBottom: 10,
     paddingLeft: 40,
+    paddingRight: 5,
   },
   belowImageText: {
-    fontSize: 30,
+    fontSize: 20,
     fontFamily: 'Helvetica',
   },
   detailedCompareButtonText: {
     fontSize: 20,
     fontWeight: 'bold'
   },
-  factView: {
-    flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    paddingTop: 20,
+  factsView: {
+    paddingLeft: 10,
   },
   factNumberText: {
-    paddingBottom: 10,
+    paddingBottom: 5,
+    paddingTop: 20,
     fontWeight: 'bold',
     fontFamily: 'Helvetica',
     color: AppConstants.virtaDarkBlue
   },
   trueFactText: {
-    paddingBottom: 10,
+    paddingBottom: 5,
+    paddingTop: 20,
     fontWeight: 'bold',
     fontFamily: 'Helvetica',
     color: AppConstants.virtaDarkBlue
   },
   falseFactText: {
-    paddingBottom: 10,
+    paddingBottom: 5,
+    paddingTop: 10,
     fontWeight: 'bold',
     fontFamily: 'Helvetica',
     textDecorationLine: 'line-through',
@@ -180,7 +208,12 @@ const virtaAppStyles = StyleSheet.create({
     fontWeight: 'bold',
     textDecorationLine: 'underline',
     color: AppConstants.virtaDarkBlue,
-  }
+  },
+  logoImageSizing: {
+    height: 24,
+    width: 24,
+    marginLeft: 4,
+  },
 });
 
 export {virtaAppStyles};

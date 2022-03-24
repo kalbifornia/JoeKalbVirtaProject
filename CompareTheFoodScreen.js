@@ -46,15 +46,15 @@ const CompareTheFoodScreen = ({ navigation }) => {
         <ScrollView
           pagingEnabled
           horizontal
-          showsHorizontalScrollIndicator={true}
+          showsHorizontalScrollIndicator={false}
           onScroll={onScrollKeto}
-          style={{width: width,paddingTop: 50,paddingBottom: 50}}>
+          style={{width: width,paddingTop: 20,paddingBottom: 20}}>
           {
             ketoImages.map((image,index) => (
               <Image
                 key={index}
                 source={image}
-                style={{width:width,height: 300, resizeMode: 'contain'}}
+                style={{width:width,height: 200, resizeMode: 'contain'}}
               />
             ))
           }
@@ -66,15 +66,15 @@ const CompareTheFoodScreen = ({ navigation }) => {
         <ScrollView
           pagingEnabled
           horizontal
-          showsHorizontalScrollIndicator={true}
+          showsHorizontalScrollIndicator={false}
           onScroll={onScrollUsualCare}
-          style={{width:width,paddingTop: 50, paddingBottom: 50}}>
+          style={{width:width,paddingTop: 20, paddingBottom: 20}}>
           {
             usualCareImages.map((image,index) => (
               <Image
                 key={index}
                 source={image}
-                style={{width:width,height: 300, resizeMode: 'contain'}}
+                style={{width:width,height: 200, resizeMode: 'contain'}}
               />
             ))
           }

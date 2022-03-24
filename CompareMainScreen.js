@@ -18,7 +18,7 @@ const CompareMainScreen = ({ navigation }) => {
 
   return (
       <View style={virtaAppStyles.container}>
-          <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
+          <View style={{flex: 2, alignItems: 'center', justifyContent: 'flex-end'}}>
             <TouchableOpacity onPress={onPressUsualCare}>
               <View style={virtaAppStyles.usualCareButton}>
                 <Text style={virtaAppStyles.usualCareButtonText}>The Usual Care</Text>
@@ -27,10 +27,10 @@ const CompareMainScreen = ({ navigation }) => {
           </View>
 
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Text style={virtaAppStyles.mainText}>vs.</Text>
+            <Text style={virtaAppStyles.headerText}>vs.</Text>
           </View>
 
-          <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
+          <View style={{flex: 2, alignItems: 'center', justifyContent: 'flex-start'}}>
             <TouchableOpacity onPress={onPressVirta}>
               <View style={virtaAppStyles.standardButton}>
                 <Image source={require('./assets/virta-logo-white.png')}

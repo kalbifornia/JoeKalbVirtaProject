@@ -22,26 +22,22 @@ const DetailedCompareMainScreen = ({ navigation }) => {
 
   return (
       <View style={virtaAppStyles.container}>
-          <View style={{flex: 1, alignItems: 'center'}}>
+          <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end'}}>
             <Text style={virtaAppStyles.headerText}>Detailed Comparison: The Usual Care vs. Virta</Text>
           </View>
 
           <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
-            <TouchableOpacity onPress={onPressHeart}>
+            <TouchableOpacity style={{marginBottom: 20,}} onPress={onPressHeart}>
               <View style={virtaAppStyles.standardButton}>
                 <Text style={virtaAppStyles.standardButtonText}><Text style={{color: 'red'}}>{String.fromCodePoint('0x1F4D6')}</Text> Overview</Text>
               </View>
             </TouchableOpacity>
-          </View>
-          <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
-            <TouchableOpacity onPress={onPressFood}>
+            <TouchableOpacity style={{marginBottom: 20,}} onPress={onPressFood}>
               <View style={virtaAppStyles.standardButton}>
                 <Text style={virtaAppStyles.standardButtonText}>{String.fromCodePoint('0x1F372')} The Food</Text>
               </View>
             </TouchableOpacity>
-          </View>
-          <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
-            <TouchableOpacity onPress={onPressInflammation}>
+            <TouchableOpacity style={{marginBottom: 20,}} onPress={onPressInflammation}>
               <View style={virtaAppStyles.standardButton}>
                 <Text style={virtaAppStyles.standardButtonText}>{String.fromCodePoint('0x1F525')} Inflammation</Text>
               </View>

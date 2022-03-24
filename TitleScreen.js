@@ -36,7 +36,7 @@ const TitleScreen = ({ navigation }, props) => {
       </View>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 20}}>
       {
-        footerVisible ? <Text style={{fontFamily: 'Helvetica', fontSize: 18,}}>The "P.O.C." is <Text style={{fontStyle:'italic'}}>intended</Text> to stand for "Proof of Concept" {String.fromCodePoint('0x1F61C')}</Text> : null
+        footerVisible ? <Text style={{fontFamily: 'Helvetica', fontSize: 18,}}>The "P.O.C." is <Text style={{fontStyle:'italic'}}>intended</Text> to stand for "Proof of Concept" {AppConstants.winkFace}</Text> : null
       }
       </View>
     </View>

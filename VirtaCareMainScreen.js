@@ -25,7 +25,7 @@ const VirtaCareMainScreen = ({ navigation }) => {
                 style={{width: 355, height: 200,}}
             />
             </TouchableOpacity>
-            <Text style={virtaAppStyles.belowImageText}>Don't believe me? {AppConstants.upFinger}See it from Virta's Medical Director!</Text>
+            <Text style={virtaAppStyles.belowImageText}>Don't believe me? {AppConstants.upFinger}See it from Virta's Medical Director (RIP, Dr. Hallberg: you taught the world that "Diabetes is Reversible")!</Text>
           </View>
       </View>
   );

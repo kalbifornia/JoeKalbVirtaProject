@@ -1,12 +1,15 @@
 {
   "expo": {
-    "name": "my-virta-app",
-    "slug": "my-virta-app",
-    "version": "1.0.0",
+    "description": "An app to learn React and demonstrate to Virta that I'd be a great fit as a developer there",
+    "primaryColor": "#28acfc",
+    "name": "Joe Kalb POC App for Virta",
+    "slug": "JoeKalbVirtaApp",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/virta-favicon.png",
+    "privacy": "public",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/virta-favicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +20,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kalbifornia.JoeKalbVirtaApp"
     },
     "android": {
       "adaptiveIcon": {

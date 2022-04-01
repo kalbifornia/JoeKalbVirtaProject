@@ -22,7 +22,7 @@ const AboutJoeMainScreen = ({ navigation }) => {
   }
 
   function onPressVideoIntro() {
-    visitURL("TODO");
+    visitURL("https://youtu.be/Ffrc8P1OfRo");
   }
 
   return (

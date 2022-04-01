@@ -1,0 +1,18 @@
+{
+  "cli": {
+    "version": ">= 0.34.0"
+  },
+  "submit": {
+    "test": {
+      "android": {
+        "serviceAccountKeyPath": "../path/to/api-xxx-yyy-zzz.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "joseph.j.kalb@gmail.com",
+        "ascAppId": "1616364103",
+        "appleTeamId": "R5V9VUJZL9"
+      }
+    }
+  }
+}

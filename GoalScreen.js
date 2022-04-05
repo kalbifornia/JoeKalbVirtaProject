@@ -24,6 +24,10 @@ const GoalScreen = ({ navigation }) => {
     navigation.navigate('KetoFactsMain');
   }
 
+  function onPressProvideFeedback() {
+    navigation.navigate('FeedbackMain');
+  }
+
   return (
     <View style={virtaAppStyles.container}>
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'flex-end'}}>
@@ -48,6 +52,14 @@ const GoalScreen = ({ navigation }) => {
         <TouchableOpacity onPress={onPressDemoAPI} style={{paddingTop: 20}}>
           <View style={virtaAppStyles.standardButton}>
             <Text style={virtaAppStyles.standardSmallerButtonText}>Demo API integration</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+
+      <View style={{flex: 1, justifyContent: 'flex-end'}}>
+        <TouchableOpacity onPress={onPressProvideFeedback}>
+          <View style={virtaAppStyles.standardButton}>
+            <Text style={virtaAppStyles.standardSmallerButtonText}>Virta: Provide Feedback</Text>
           </View>
         </TouchableOpacity>
       </View>

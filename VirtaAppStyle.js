@@ -32,6 +32,10 @@ const virtaAppStyles = StyleSheet.create({
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
   },
+  unboldedMainText: {
+    fontSize: 12,
+    fontFamily: 'Helvetica',
+  },
   standardButton: {
     backgroundColor: AppConstants.virtaDarkBlue,
     maxWidth: 300,
@@ -214,6 +218,27 @@ const virtaAppStyles = StyleSheet.create({
     width: 24,
     marginLeft: 4,
   },
+  feedbackTextInput: {
+    color: 'black',
+    padding: 5,
+    backgroundColor: 'white',
+    borderWidth: 2,
+    borderColor: 'black',
+    borderRadius: 5,
+    width: 300,
+    height: 100,
+    margin: 5,
+  },
+  oneLineInput: {
+    color: 'black',
+    padding: 5,
+    backgroundColor: 'white',
+    borderWidth: 2,
+    borderColor: 'black',
+    borderRadius: 5,
+    width: 300,
+    margin: 5,
+  }
 });
 
 export {virtaAppStyles};

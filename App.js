@@ -15,6 +15,7 @@ import AboutJoeMainScreen from './AboutJoeMainScreen';
 import JoeCompetenceMainScreen from './JoeCompetenceMainScreen';
 import JoeAttitudeMainScreen from './JoeAttitudeMainScreen';
 import JoeAlignmentMainScreen from './JoeAlignmentMainScreen';
+import FeedbackMainScreen from './FeedbackMainScreen';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 
@@ -41,6 +42,11 @@ export default function App() {
             name="CompareMain"
             component={CompareMainScreen}
             options={{title: "Compare Main Screen", headerShown: true}}
+            />
+          <Stack.Screen
+            name="FeedbackMain"
+            component={FeedbackMainScreen}
+            options={{title: "Feedback: Help Joe Improve", headerShown: true}}
             />
           <Stack.Screen
             name="UsualCareMain"

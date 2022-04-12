@@ -18,6 +18,8 @@ const AppConstants = {
   brain: String.fromCodePoint('0x1F9E0'),
   heart: String.fromCodePoint('0x2764'),
   chart: String.fromCodePoint('0x1F4C8'),
+  upCaret : '\u25B2',
+  downCaret : '\u25BC',
 };
 
 export {AppConstants};

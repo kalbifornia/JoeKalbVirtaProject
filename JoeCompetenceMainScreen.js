@@ -125,10 +125,10 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
       <ScrollView>
         <View style={virtaAppStyles.container}>
           <View style={{flex:1}}>
-            <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleCorporateCareer}>{isCorporateCareerCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} 14-year Software Dev Corporate Career</Text>
+            <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleCorporateCareer}>{isCorporateCareerCollapsed ? AppConstants.downCaret : AppConstants.upCaret} 14-year Software Dev Corporate Career</Text>
             <Collapsible collapsed={isCorporateCareerCollapsed}>
               <View style={{flexDirection: 'row'}}>
-                <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHighLevelOverview}>{isHighLevelOverviewCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} High-Level Overview</Text>
+                <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHighLevelOverview}>{isHighLevelOverviewCollapsed ? AppConstants.downCaret : AppConstants.upCaret} High-Level Overview</Text>
                 </View>
                 <Collapsible collapsed={isHighLevelOverviewCollapsed}>
                   <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} <Text style={{fontWeight: 'bold'}}>Corporate success</Text> in front-end dev, back-end dev, team leadership, and architecture</Text>
@@ -136,7 +136,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                   <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} <Text style={{fontWeight: 'bold'}}>Recent promotion</Text> (February 2022) from <Text style={{fontStyle:'italic'}}>Solution Architect</Text> to <Text style={{fontStyle:'italic'}}>Senior Solution Architect</Text></Text>
                 </Collapsible>
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleSaltillo}>{isSaltilloCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Developer: Saltillo Corporation (2008-2010)</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleSaltillo}>{isSaltilloCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Developer: Saltillo Corporation (2008-2010)</Text>
                   <Image source={require('./assets/saltillo.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -147,7 +147,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleMotorists}>{isMotoristsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Developer: Motorists Insurance Group [now Encova] (2010-2019)</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleMotorists}>{isMotoristsCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Developer: Motorists Insurance Group [now Encova] (2010-2019)</Text>
                   <Image source={require('./assets/encova.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -159,7 +159,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleGrange}>{isGrangeCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Architect: Grange Insurance (2019 - current)</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleGrange}>{isGrangeCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Architect: Grange Insurance (2019 - current)</Text>
                   <Image source={require('./assets/grange.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -170,10 +170,10 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                   <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} Friendly communication, high-quality analysis and designs, solid ideas and <Text style={{fontWeight: 'bold'}}>proofs of concept</Text></Text>
                 </Collapsible>
             </Collapsible>
-            <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleSideProjects}>{isSideProjectsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Projects Outside Work</Text>
+            <Text style={virtaAppStyles.collapsibleParentText} onPress={toggleSideProjects}>{isSideProjectsCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Projects Outside Work</Text>
               <Collapsible collapsed={isSideProjectsCollapsed}>
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHookShots}>{isHookShotsCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <Text style={{fontStyle:'italic'}}>Hook Shots App</Text>: iPhone & Android App</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHookShots}>{isHookShotsCollapsed ? AppConstants.downCaret : AppConstants.upCaret} <Text style={{fontStyle:'italic'}}>Hook Shots App</Text>: iPhone & Android App</Text>
                   <Image source={require('./assets/hookshots.jpeg')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -189,7 +189,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleDR}>{isDRCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <Text style={{fontStyle:'italic'}}>Disease Reversals</Text> Website</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleDR}>{isDRCollapsed ? AppConstants.downCaret : AppConstants.upCaret} <Text style={{fontStyle:'italic'}}>Disease Reversals</Text> Website</Text>
                   <Image source={require('./assets/diseasereversals.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -202,7 +202,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleYCW}>{isYCWCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} <Text style={{fontStyle:'italic'}}>You Cured What?!</Text> Podcast Website</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleYCW}>{isYCWCollapsed ? AppConstants.downCaret : AppConstants.upCaret} <Text style={{fontStyle:'italic'}}>You Cured What?!</Text> Podcast Website</Text>
                   <Image source={require('./assets/youcuredwhat.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -214,7 +214,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHighland}>{isHighlandCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Highland High School Website</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleHighland}>{isHighlandCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Highland High School Website</Text>
                   <Image source={require('./assets/highland.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -226,7 +226,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                 </Collapsible>
 
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleThisApp}>{isThisAppCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} This App</Text>
+                  <Text style={virtaAppStyles.collapsibleChildText} onPress={toggleThisApp}>{isThisAppCollapsed ? AppConstants.downCaret : AppConstants.upCaret} This App</Text>
                   <Image source={require('./assets/virta-favicon.png')}
                     style={virtaAppStyles.logoImageSizing}
                   />
@@ -238,7 +238,7 @@ const JoeCompetenceMainScreen = ({ navigation }) => {
                   <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} While we're at it, check out this app's integration with a basic back-end <Text style={virtaAppStyles.bulletedLink} onPress={onPressKetoFacts}>Keto Facts API</Text></Text>
                 </Collapsible>
             </Collapsible>
-            <Text style={virtaAppStyles.collapsibleParentText} onPress={togglePersonalLife}>{isPersonalLifeCollapsed ? AppConstants.rightArrow : AppConstants.downArrow} Personal Life</Text>
+            <Text style={virtaAppStyles.collapsibleParentText} onPress={togglePersonalLife}>{isPersonalLifeCollapsed ? AppConstants.downCaret : AppConstants.upCaret} Personal Life</Text>
             <Collapsible collapsed={isPersonalLifeCollapsed}>
               <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} Husband to a <Text style={{fontWeight: 'bold'}}>lovely</Text> wife.</Text>
               <Text style={virtaAppStyles.collapsibleGrandchildText}>{AppConstants.bullet} Father to <Text style={{fontWeight: 'bold'}}>wonderful</Text> 16-month-old daughter.</Text>
